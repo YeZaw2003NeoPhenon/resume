@@ -1,0 +1,397 @@
+
+.about-me {
+    background-color: #f8f9fa;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.description-text h3 {
+    font-size: 1.75rem;
+    color: #007bff;
+}
+
+.description-text ul {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.description-text li strong {
+    color: #007bff;
+}
+
+.about-me img {
+    border-radius: 50%; 
+    width: 20rem; 
+    height: 25rem; 
+    object-fit: cover; 
+}
+.description-text{
+    font-weight: 600;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size:1.1rem;
+    line-height: 1.8;
+    margin-bottom:20px;
+}
+.description-text h5{
+    display:block;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: -15px;
+}
+.description-text p{
+    margin-bottom: 20px;
+}
+.description-text p::selection{
+    color:rgb(255, 255, 255);
+    background-color: #64ec6a;
+}
+.description-text strong{
+    color: #007bff;
+}
+
+.about-me-img-block{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding:20px;
+    gap:35px;
+}
+
+.navbar {
+    background-color: #343a40;
+    padding: 1rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s; 
+}
+
+.navbar:hover {
+    background-color: #495057; 
+}
+
+.navbar-brand {
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    color: #ffffff; 
+}
+
+.navbar-brand:hover {
+    color: #ffc107; 
+}
+
+.nav-link {
+    color: #ffffff; 
+    padding: 0.5rem 1rem; 
+    transition: color 0.3s;
+    border-radius: 0.25rem; 
+}
+
+.nav-link:hover {
+    color: #ffc107; 
+    background-color: rgba(255, 193, 7, 0.2); 
+}
+
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+.nav-item.active .nav-link {
+    font-weight: bold; 
+    color: #c76a00;
+    border-bottom: 2px solid #ffc107;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem; 
+    }
+    
+    .nav-link {
+        padding: 0.5rem; 
+    }
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+p, ul {
+    font-size: 1.1rem;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; 
+    color: #343a40; 
+}
+
+#portfolio {
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #007bff; 
+}
+
+
+.card {
+    border: none; 
+    border-radius: 10px; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 20px; 
+}
+
+.position-relative {
+    position: relative;
+    margin-bottom: 20px; 
+    display:flex;
+    align-items:center;
+    justify-content:end;
+    padding:20px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-decoration: none; 
+}
+
+.play-button:hover {
+    color: #007bff; 
+}
+
+.btn {
+    background-color: #007bff; 
+    border: none; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+.position-relative img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.skills {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #007bff;
+}
+
+.skill-category h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #007bff;
+    text-transform: uppercase;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-list li {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.skill-list li i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 1.2rem;
+}
+
+
+.card-title {
+    font-weight: bold;
+    color: #00796b; 
+    font-size: 1.5rem;
+    margin-bottom: 1rem; 
+}
+
+.list-group-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #555; 
+    border: none; 
+    padding: 10px; 
+    transition: background-color 0.2s ease; 
+}
+
+.list-group-item:hover {
+    background-color: #e0f2f1; 
+    color: #004d40; 
+    font-weight: bold; 
+}
+
+section {
+    background-color: #f8f9fa; 
+    padding: 3rem;
+    border-radius: 10px; 
+    margin-bottom: 2rem; 
+}
+
+footer {
+    background-color: #2c3e50; 
+    color: white;
+    padding:3rem;
+}
+
+footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+footer p, footer a {
+    font-size: 1rem;
+    color: #bdc3c7; /* Light gray for text */
+}
+
+footer a:hover {
+    color: #1abc9c; /* Hover effect for links */
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 10px 0;
+}
+
+footer ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #1abc9c; 
+}
+
+footer .btn {
+    margin-top: 10px;
+}
+
+footer .col-md-4 {
+    margin-bottom: 2rem;
+}
+
+footer .fab {
+    margin-right: 8px;
+}
+
+footer p.quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+.contact-link .btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;    
+}
+.education {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.education-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.education-list li {
+    margin-bottom: 2rem;
+}
+
+.education-list h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.education-list p {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 0;
+}
+
+.education-list p.text-muted {
+    font-style: italic;
+    color: #6c757d;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 2rem 0; 
+    }
+}
+
