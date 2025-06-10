@@ -140,6 +140,11 @@ h2 {
     color: #007bff; 
 }
 
+h3 {
+    color: #007bff;
+    margin-left:15px;
+    font-size: 27px;
+}
 
 .card {
     border: none; 
@@ -149,7 +154,7 @@ h2 {
 }
 
 .card:hover {
-    transform: translateY(-5px); 
+    transform: translateY(-2px); 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -185,13 +190,14 @@ h2 {
     padding:20px;
 }
 
-.btn {
+ .btn {
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
 .contact-link .btn {
     background-color: #007bff; 
     border: none; 
@@ -208,6 +214,7 @@ h2 {
     object-fit: cover;
     border-radius: 10px;
 }
+/** skill section*/
 .skills {
     padding: 4rem 0;
     background-color: #f8f9fa;
@@ -283,6 +290,7 @@ section {
     margin-bottom: 2rem; 
 }
 
+/** footer */
 footer {
     background-color: #2c3e50; 
     color: white;
@@ -298,11 +306,11 @@ footer h5 {
 
 footer p, footer a {
     font-size: 1rem;
-    color: #bdc3c7; /* Light gray for text */
+    color: #bdc3c7; 
 }
 
 footer a:hover {
-    color: #1abc9c; /* Hover effect for links */
+    color: #1abc9c;
 }
 
 footer ul {
@@ -340,12 +348,24 @@ footer p.quote {
     font-style: italic;
     margin-top: 10px;
 }
-.contact-link .btn{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 10rem;    
+
+.contact-link .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    opacity: 5;
+    transition: transform 0.3s ease, opacity 0.2s ease;
 }
+.contact-link .icon:hover {
+    transform: scale(1.05);
+}
+
+.contact-link aside {
+    gap: 10px;
+}
+
+
+/** education */
 .education {
     padding: 4rem 0;
     background-color: #f8f9fa;
@@ -384,33 +404,104 @@ footer p.quote {
     color: #6c757d;
 }
 
-#certifications .card {
-    transition: transform 0.3s ease;
+
+/** backend stylings*/
+#backend-projects {
+    background-color: #f8f9fa;
+    padding: 2rem 0;
 }
 
-#certifications .card:hover {
-    transform: scale(1.05);
+.project-title {
+    font-size:1rem;
+    font-weight: bold;
+    color: #343a40;
+
 }
 
-#certifications .card .btn {
-    font-size: 0.9rem;
+.project-title:hover {
+    text-decoration: underline;
+}
+.education-list li aside div {
+    margin-top: 0.3em;
 }
 
-#certifications .card-title {
-    margin-bottom: 10px;
+.education-list li aside div strong {
+    margin-right: 0.3em;
 }
 
-#certifications .card-text {
-    font-size: 1rem;
-    margin-bottom: 20px;
+.education-list li aside div a {
+    text-decoration: underline; /* Indicate it's a link */
+    color: #007bff; /* Bootstrap primary color for links */
+}
+
+.education-list li aside div a:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+#backend-projects p{
+    font-size:1rem;
+    line-height: 1.6;
+    margin-bottom:0.75px;
+    color: #495057;
+    text-align: justify;
+    padding:8px;
+}
+
+#backend-projects p strong {
+    font-weight: 600; 
+    color: #343a40;
+}
+
+#backend-projects p:hover {
+    background-color: #f1f3f5;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    padding-left: 10px;
+}
+#backend-projects .row{
+    padding:15px;
+}
+#backend-projects ul {
+    padding-left: 0;
+    padding:5px;
+}
+#backend-projects a.btn{
+    margin-left:15px;
+
+}
+
+#backend-projects a.btn:hover {
+    background-color: #343a40;
+    color: #ffffff;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+#backend-projects ul li {
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding:10px;
+    display:flex;
+    align-items:start;
+    justify-content: center;
+    flex-direction: column;
+    gap:5px;
+}
+
+#backend-projects h4 {
+    font-size: 1.5rem;
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+#backend-projects .row{
+    padding:15px;
+    margin-left:15px;
 }
 
 @media (max-width: 768px) {
     section {
         padding: 2rem 0; 
     }
-}
-@media (max-width: 768px) {
     .navbar-brand {
         font-size: 1.25rem; 
     }
@@ -418,5 +509,14 @@ footer p.quote {
     .nav-link {
         padding: 0.5rem; 
     }
+    #backend-projects ul li {
+        flex-direction: column;
+        text-align: center; 
+    }
+    #backend-projects p {
+        text-align: left;
+    }
+    #backend-projects a.btn{
+        align-self: center;
+    }
 }
-
