@@ -11,8 +11,13 @@ html{
     flex-direction: column;
     justify-content: center;
     gap:50px;
-}
 
+}
+.description-text h3{
+    display:inline-block;
+    margin-left:-30px;
+    margin-bottom:20px;
+}
 .about-me h2 {
     font-size: 2.5rem;
     color: #007bff;
@@ -368,40 +373,70 @@ footer p.quote {
 /** education */
 .education {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; 
 }
 
 .education h2 {
-    font-size: 2.5rem;
-    color: #007bff;
-    font-weight: bold;
-    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    color: #0056b3;
+    font-weight: 700; 
+    margin-bottom: 2.5rem; 
+    text-align: center;
 }
 
 .education-list {
     list-style-type: none;
     padding-left: 0;
+    display: flex; 
+    flex-direction: column;
+    gap: 2.5rem; 
 }
 
 .education-list li {
-    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px; 
+    padding: 1.8rem; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.education-list li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .education-list h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.7rem; 
+    font-weight: 600; 
     color: #007bff;
+    margin-bottom: 0.5rem;
 }
 
 .education-list p {
-    font-size: 1.1rem;
-    color: #495057;
-    margin: 0;
+    font-size: 1.05rem;
+    color: #333333;
+    margin-bottom: 0.5rem; 
+    line-height: 1.6;
 }
 
 .education-list p.text-muted {
-    font-style: italic;
-    color: #6c757d;
+    font-style: normal; 
+    color: #6c757d; 
+    margin-top: 0.3rem; 
+}
+
+.education-list strong {
+    font-weight: 600; 
+    color: #0056b3;
+}
+
+.education-list .btn {
+    margin-top: 0.8rem; 
+    margin-right: 0.5rem; 
+    padding: 0.5rem 1.2rem; 
+    font-size: 0.95rem; 
+    border-radius: 5px;
 }
 
 
@@ -520,3 +555,5 @@ footer p.quote {
         align-self: center;
     }
 }
+
+
