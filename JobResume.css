@@ -555,5 +555,182 @@ footer p.quote {
         align-self: center;
     }
 }
+ @media (max-width: 575.98px) {
+            section {
+                padding: 1.5rem;
+            }
+
+            .about-me {
+                padding: 2rem 1rem;
+                gap: 30px;
+            }
+
+            .about-me img {
+                width: 10rem;
+                height: 10rem;
+            }
+
+            .description-text h3 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .description-text p {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            .skills h2 {
+                font-size: 2rem;
+            }
+            .skill-category h5 {
+                font-size: 1.5rem;
+            }
+            .skill-list li {
+                font-size: 1rem;
+                padding-left: 1.2rem;
+            }
+
+            #projects h2, #projects h3 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .card-title {
+                font-size: 1.2rem;
+            }
+            .card-text {
+                font-size: 0.9rem;
+            }
+            .position-relative {
+                padding: 10px;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .position-relative .btn {
+                width: 100%;
+            }
+
+            .education h2 {
+                font-size: 2rem;
+            }
+            .education-list h5 {
+                font-size: 1.4rem;
+            }
+            .education-list p {
+                font-size: 0.95rem;
+            }
+            .education-list li {
+                padding: 1.2rem;
+            }
+            .education-list .btn {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            footer h5 {
+                font-size: 1.2rem;
+            }
+            footer p, footer a {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .about-me-img-block {
+                flex-direction: column;
+            }
+            .about-me img {
+                width: 12rem;
+                height: 12rem;
+            }
+            .description-text {
+                text-align: center;
+            }
+            .description-text h3 {
+                margin-left: 0;
+            }
+            .position-relative {
+                justify-content: center;
+            }
+            .education-list .btn {
+                display: inline-block;
+                width: auto;
+                margin-left: initial;
+                margin-right: initial;
+            }
+            .education-list li aside {
+                align-items: flex-start;
+            }
+            .education-list li aside div {
+                text-align: left;
+            }
+        }
+
+
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            section {
+                padding: 3rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+            .nav-link {
+                padding: 0.5rem 1rem;
+            }
+
+            .about-me-img-block {
+                flex-direction: row;
+                justify-content: center;
+                gap: 35px;
+            }
+            .about-me img {
+                width: 20rem;
+                height: 25rem;
+            }
+            .description-text {
+                text-align: left;
+            }
+            .description-text h3 {
+                margin-left: -30px;
+            }
+
+            .skill-category {
+                margin-bottom: 0;
+                text-align: left;
+            }
+            .skill-list li {
+                display: block;
+                text-align: left;
+            }
+
+            #projects h3 {
+                margin-left: 15px;
+                text-align: left;
+            }
+            .position-relative {
+                justify-content: flex-end;
+                flex-wrap: nowrap;
+            }
+
+            .education-list h5, .education-list p {
+                text-align: left;
+            }
+            .education-list .btn {
+                display: inline-block;
+                width: auto;
+                margin-left: initial;
+                margin-right: initial;
+            }
+            .education-list li aside {
+                align-items: flex-start;
+            }
+            .education-list li aside div {
+                text-align: left;
+            }
+}
 
 
