@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
     <title>Java Junior Developer Job Resume</title>
-    <link rel = "stylesheet" type = "text/css" href = "JobResume.css">
+    <link rel = "stylesheet" type = "text/css" href = "JobResume.css" >
+    <script type = "text/JavaScript" src = "Jobresume.js"></script>
 </head>
 <body>
-
     <article class = "nav-cotainer"> 
         <nav class = "navbar navbar-expand-lg navbar-dark bg-dark p-3">
             <div class = "container-fluid">
@@ -27,7 +26,7 @@
                 <div class="collapse navbar-collapse" id = "navbarNav"> 
                     <ul class="navbar-nav ms-auto">
                         <li class = "nav-item">
-                            <a class="nav-link active" href = "#about">About</a>
+                            <a class="nav-link active" href = "#about" aria-current="page">About</a>
                         </li>
                         <li class = "nav-item">
                             <a class="nav-link " href = "#skills">Skills</a>
@@ -118,70 +117,160 @@
                 </div>
             </div>
     </section>
-    
-        <section id="portfolio" class="container mt-5" id = "projects">
-            <h2 class="text-center fw-bold " id = "projects">Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mt-5">
-                        <img class="card-img-top" src="img/notepadProgram.png" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Note-Taking App</h5>
-                            <p class="card-text">Spring Boot, MyBatis, PostgreSQL</p>
-                            <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
-                                <a href="https://www.youtube.com/watch?v=phwWkEI2ohE" class="source-button" target="_blank">
-                                   <button class="btn btn-primary " data-bs-toggle = "tooltip" title = "watch the project demo">
-                                    <i class="bi bi-box-arrow-up-right"></i> View Project
-                                   </button>
-                                </a>
-                                <a href="https://github.com/YeZaw2003NeoPhenon/ever_notable_memo" class="btn btn-dark"  data-bs-toggle="tooltip" title="view the source code">
-                                    <i class="bi bi-github"></i> Source Code
-                                </a>
+
+        <section class = "container mt-5 " id = "projects" id = "porfilio">
+            <h2 class="text-center fw-bold" id = "projects">Projects</h2>
+            <h3 class = "fw-bold d-block me-5 mt-4">Full Stack Projects</h4>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mt-5">
+                            <img class="card-img-top" src="img/notepadProgram.png" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Note-Taking App</h5>
+                                <p class="card-text">Spring Boot, MyBatis, PostgreSQL</p>
+                                <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
+                                    <a href="https://www.youtube.com/watch?v=phwWkEI2ohE" class="source-button" target="_blank">
+                                       <button class="btn btn-primary " data-bs-toggle = "tooltip" title = "watch the project demo">
+                                        <i class="bi bi-box-arrow-up-right"></i> View Project
+                                       </button>
+                                    </a>
+                                    <a href="https://github.com/YeZaw2003NeoPhenon/ever_notable_memo" class="btn btn-dark"  data-bs-toggle="tooltip" title="view the source code">
+                                        <i class="bi bi-github"></i> Source Code
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mt-5">
-                        <img class="card-img-top" src="img/emp.png" alt="Project 2">
+                    <div class="col-md-4">
+                        <div class="card mt-5">
+                            <img class="card-img-top" src="img/emp.png" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee Management System</h5>
+                                <p class="card-text">Spring Boot, Spring Security, React.js, PostgreSQL</p>
+                                <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
+                                    <a href="https://www.youtube.com/watch?v=OZ2w21glUZ8&t=1s" class="source-button" target="_blank">
+                                        <button class="btn btn-primary" data-bs-toggle = "tooltip" title = "watch the project demo">
+                                            <i class="bi bi-box-arrow-up-right"></i> View Project
+                                        </button>
+                                    </a>
+                                    <a href="https://github.com/YeZaw2003NeoPhenon/emp_ms_react_project" class="btn btn-dark" data-bs-toggle="tooltip" title="view the source code">
+                                        <i class="bi bi-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-md-4">
+                        <div class="card mt-5">
+                                <img class="card-img-top" src = "img/cms.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Content Management System</h5>
+                                <p class="card-text">Spring MVC, Postgresql, Thymeleaf</p>
+                                <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
+                                    <a href = "https://www.youtube.com/watch?v=3VTFgeDNvFE" class="source-button" target = "_blank">
+                                        <button class="btn btn-primary" data-bs-toggle = "tooltip" title = "watch the project demo">
+                                            <i class="bi bi-box-arrow-up-right"></i> View Project
+                                        </button>
+                                    </a>
+                                    <a href="https://github.com/YeZaw2003NeoPhenon/Content_Management_System" class="btn btn-dark"  data-bs-toggle="tooltip" title="view the source code">
+                                        <i class="bi bi-github"></i> Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mt-5">
+                            <img class="card-img-top" src = "img/tictactoe.png">
                         <div class="card-body">
-                            <h5 class="card-title">Employee Management System</h5>
-                            <p class="card-text">Spring Boot, Spring Security, React.js, PostgreSQL</p>
+                            <h5 class="card-title">Tic Tac Toe</h5>
+                            <p class="card-text">HTML,CSS,JavaScript(JQuery)</p>
                             <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
-                                <a href="https://www.youtube.com/watch?v=OZ2w21glUZ8&t=1s" class="source-button" target="_blank">
+                                <a href = "https://www.youtube.com/watch?v=BYZQA8xbMKc" class="source-button" target = "_blank">
                                     <button class="btn btn-primary" data-bs-toggle = "tooltip" title = "watch the project demo">
                                         <i class="bi bi-box-arrow-up-right"></i> View Project
                                     </button>
                                 </a>
-                                <a href="https://github.com/YeZaw2003NeoPhenon/emp_ms_react_project" class="btn btn-dark" data-bs-toggle="tooltip" title="view the source code">
+                                <a href="https://github.com/YeZaw2003NeoPhenon/TicTacToe-HTML-CSS-JQuery-" class="btn btn-dark"  data-bs-toggle="tooltip" title="view the source code">
                                     <i class="bi bi-github"></i> Source Code
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class = "col-md-4">
-                    <div class="card mt-5">
-                            <img class="card-img-top" src = "img/cms.png">
-                        <div class="card-body">
-                            <h5 class="card-title">Content Management System</h5>
-                            <p class="card-text">Spring MVC, Postgresql, Thymeleaf</p>
-                            <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
-                                <a href = "https://www.youtube.com/watch?v=3VTFgeDNvFE" class="source-button" target = "_blank">
-                                    <button class="btn btn-primary" data-bs-toggle = "tooltip" title = "watch the project demo">
-                                        <i class="bi bi-box-arrow-up-right"></i> View Project
-                                    </button>
-                                </a>
-                                <a href="https://github.com/YeZaw2003NeoPhenon/Content_Management_System" class="btn btn-dark"  data-bs-toggle="tooltip" title="view the source code">
-                                    <i class="bi bi-github"></i> Source Code
-                                </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mt-5">
+                            <img class="card-img-top" src = "img/rms.png">
+                            <div class="card-body">
+                                <h5 class = "card-title">Restaurant Management System Without DB</h5>
+                                <p class="card-text">Spring MVC, Thymeleaf,HTML,Bootstrap</p>
+                                <div class="position-relative d-flex align-items-center justify-content-end gap-3 fw-bold">
+                                    <a href = "https://www.youtube.com/watch?v=_dX1Q31azFA&t=181s" class="source-button" target = "_blank">
+                                        <button class="btn btn-primary" data-bs-toggle = "tooltip" title = "watch the project demo">
+                                            <i class="bi bi-box-arrow-up-right"></i> View Project
+                                        </button>
+                                    </a>
+                                    <a href="https://github.com/YeZaw2003NeoPhenon/restaurant_management_system_without_database" class="btn btn-dark"  data-bs-toggle="tooltip" title="view the source code">
+                                        <i class="bi bi-github"></i> Source Code
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
+            </section>   
+            
+            <section class = "container mt-5" id = "backend-projects">
+                <h3 class="fw-bold">Backend Projects</h3>
+                <div class="row mt-3 me-5">
+                    <ul class ="list-unstyled">
+                        <li class = "mt-2 mb-4">
+                            <h4 class = "project-title">CrazyBot Program</h4>
+                            <p><strong>Technologies:</strong>Java, Java-8 feature(Stream API)</p>
+                            <p class = "d-flex align-items-start justify-content-center"><strong class="me-2">Description:</strong>
+                                A simple chat-based bot created during the early stages of learning Java.
+                                The bot processes user inputs sustainably using Java's Stream API for managing responses including CRUD operations, without the use of a database or external frameworks.
+                                Addationally, it is also solitified with the effective usages of Design Principles.
+                            </p>
+                            <a href = "https://github.com/YeZaw2003NeoPhenon/CrazyBot" class="btn-outline-dark btn" title = "view codes">
+                                <i class="bi bi-github"></i> Source Code
+                            </a>
+                        </li>
+                        <li class = "mt-5">
+                            <h4 class = "project-title">Online Housing Show</h4>
+                            <p><strong>Technologies:</strong>Spring Rest Api, Spring Security, Mybatis, PostgreSQL</p>
+                            <p class= "d-flex align-items-start justify-content-center"><strong class="me-2">Description:</strong>
+                                A noteworthy project which is wholeheartedly desingned to faciliate the treasable management of housing lists.
+                                This project is crafted out with Spring Security which allows which public and private API to visitors and owner.
+                            </p>
+                            <a href = "https://github.com/YeZaw2003NeoPhenon/online_housing_show/tree/housing_branch" class="btn-outline-dark btn" title = "view codes">
+                                <i class="bi bi-github"></i> Source Code
+                            </a>
+                        </li>
+                        <li class = "mt-5">
+                            <h4 class = "project-title">Pet Care Management System</h4>
+                            <p><strong>Technologies:</strong>Spring Rest Api, Spring Security, JPA(Herbernate), PostgreSQL</p>
+                            <p class= "d-flex align-items-start justify-content-center"><strong class="me-2">Description:</strong>
+                                This project is backend utilized one which is vastly stick into deeper and sophisticated uses of JPA, such as, inheritance features, annotation as well as Abstract Factory design patterns.
+                                The project has several entities like Appointment, User extended to Admin, Patient,Veterinarian as a child classes of User class. Furthermore, the project included basic authentication handling with Spring Security and other intricated processes. 
+                            </p>
+                        </li>
+                        <li class = "mt-5">
+                            <h4 class = "project-title">Student Management System with JWT Based Authentication</h4>
+                            <p><strong>Technologies:</strong>Spring Rest Api, Spring Security(JWT- token based authentication), JPA(Herbernate), PostgreSQL</p>
+                            <p class= "d-flex align-items-start justify-content-center"><strong class="me-2">Description:</strong>
+                                This overall project is cohesively constructed with complex logic of Spring Security, including JWT token-based authentication.
+                                This project is not just tradational CRUD, but it goes beyond coherent functionalities, fostering judicious logic with multiple entities.
+                                 Moreover, the entire project is rationally configured with well-founded testing logic and it is graciously recommended to further strengthen this project with any thought-provoking front-end technology. 
+                            </p>
+                           <a href = "https://github.com/YeZaw2003NeoPhenon/student_ms_system_with_security_jwtToken" class="btn-outline-dark btn" title = "view codes">
+                                <i class="bi bi-github"></i> Source Code
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
         <section id="education" class="education container mt-5">
             <div class="row">
                 <div class="col-md-12">
@@ -193,7 +282,15 @@
                             <h5>GED Diploma</h5>
                             <aside class = "d-flex align-items-start justify-content-start flex-column gap-2">
                                 <p class="text-muted">Completed at Educatry Education Center</p>
-                                <p><strong>GED Diploma (Completed 2024)</strong> – Achieved ascore of 695</p>    
+                                <p><strong>GED Diploma (Completed 2024)</strong> – Achieved a score of 700</p>
+                        <div>
+                            <strong class="me-2">Diploma form:</strong>
+                            <a href="https://drive.google.com/file/d/1OBC5g9jSnk3_TErIsudJA0Kl6Vamn_pO/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-secondary">View Certificate</a>
+                        </div>
+                        <div>
+                            <strong class="me-2">Transcript:</strong>
+                            <a href="https://drive.google.com/file/d/1OjyIC3qSjYpA75oQMufRY2AJTRBpnYlD/view?usp=drive_link" target="_blank" class="btn btn-sm btn-outline-secondary">View Transcript</a>
+                        </div>    
                             </aside>
                          </li>
                         <li>
@@ -209,45 +306,6 @@
             </div>
         </section>
 
-   <section id="certifications" class="container mt-5">
-    <h2 class="text-center fw-bold mb-4">Certifications</h2>
-    <div class="row justify-content-center">
-        <div class="col-md-4 mb-3">
-            <div class="card border-primary">
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Java Developer Certificate</h5>
-                    <p class="card-text">Oracle (In Progress)</p>
-                    <button class="btn btn-outline-primary disabled">
-                        <i class="bi bi-file-earmark-text"></i> Coming Soon
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card border-success">
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">Spring Boot</h5>
-                    <p class="card-text">Udemy (In Progress)</p>
-                    <button class="btn btn-outline-success disabled">
-                        <i class="bi bi-file-earmark-text"></i> Coming Soon
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 mb-3">
-            <div class="card border-warning">
-                <div class="card-body text-center">
-                    <h5 class="card-title fw-bold">GED Diploma (695 Marks)</h5>
-                    <p class="card-text">GED (Completed)</p>
-                    <button class="btn btn-outline-warning disabled">
-                        <i class="bi bi-file-earmark-text"></i> Certificate Available Soon
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-        
         <footer id="contact" class="content container mt-5 mb-5">
             <div class="row">
                 <div class = "col-md-4 text-center mt-5">
@@ -277,58 +335,25 @@
                 </div>
                 <div class="contact-link col-md-4 text-center d-flex align-items-center justify-content-center flex-column gap-2">
                     <h5>Connect with Me</h5>
-                    <a href="https://github.com/YeZaw2003NeoPhenon" class="btn btn-dark btn-lg" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
+                    <aside class = "flex-container d-flex align-items-center justify-content-center flex-row gap-3">
+                    <a href="https://github.com/YeZaw2003NeoPhenon" class = "github" target="_blank">
+                        <img src="img/github-mark.png" class = "icon">
                     </a>
-                    <a href="https://www.linkedin.com/in/ye-zaw-win-5316872a5/" class="btn btn-primary btn-lg" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+                    <a href="https://www.linkedin.com/in/ye-zaw-win-5316872a5/" class="linkedin" target="_blank">
+                    <img src="img/linkedin.png" class = "icon rounded-circle" alt = "linkedin icon">
                     </a>
-
-                    <a href="https://leetcode.com/u/NeoCourney/" class="btn btn-warning btn-lg text-light" target="_blank">
-                        <img src="img/leetcodeIcon.png" alt="leetcode" style="width: 25px; margin-right: 5px;">
-                        Leetcode
+                    <a href="https://leetcode.com/u/NeoCourney/" class="leetcode" target="_blank">
+                    <img src="img/leetcode.png" alt="leetcode" class = "icon rounded-circle">
                     </a>
+                   </aside>
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col text-center">
-                    <p>&copy; 2024 Ye Zaw Win. All rights reserved.</p>
+                    <p>&copy; <span id = "current-year"></span> Ye Zaw Win. All rights reserved.</p>
                     <p>"Striving for continuous improvement in technology and life"</p>
                 </div>
             </div>
         </footer>
-</body>
-<script>
-    document.addEventListener("DOMContentLoaded" , () => {
-
-        const navLinks =  document.querySelectorAll('#navbarNav .nav-link')
-        const sections = document.querySelectorAll('section')
-
-    navLinks.forEach( navLink => {
-      navLink.addEventListener('click', function(){
-         navLinks.forEach(link => link.parentElement.classList.remove('active'));
-
-         this.parentElement.classList.add('active')
-         navLink.classList.remove('active')
-    })
-    })
-
-    let currentSection = '';
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if( pageYOffset >= sectionTop - 60 ){
-            currentSection = section.getAttribute('id')
-        }
-    })
-
-    navLinks.forEach( navLink => {
-        navLink.classList.remove('active')
-        const hrefAttr = navLink.getAttribute('href')
-        if(hrefAttr.substring(1) === currentSection){
-            navLink.classList.add('active')
-        }
-    })
-    })
-    
- </script>
+    </body>
 </html>
