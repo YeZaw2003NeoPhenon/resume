@@ -13,11 +13,13 @@ html{
     gap:50px;
 
 }
+
 .description-text h3{
     display:inline-block;
     margin-left:-30px;
     margin-bottom:20px;
 }
+
 .about-me h2 {
     font-size: 2.5rem;
     color: #007bff;
@@ -219,6 +221,7 @@ h3 {
     object-fit: cover;
     border-radius: 10px;
 }
+
 /** skill section*/
 .skill-list li {
     background-color: #ffffff; 
@@ -621,41 +624,32 @@ footer p.quote {
             footer p, footer a {
                 font-size: 0.9rem;
             }
+    .skills {
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+    .skills h2 {
+        font-size: 2.2rem;
+    }
+    .skills h2::after {
+        width: 80px;
+    }
+    .skill-category h5 {
+        font-size: 1.3rem;
+    }
+    .skill-category .skill-list li {
+        display:flex;
+        align-items: start;
+        justify-content: start;
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem; 
+    }
+    .skill-list li img {
+        width: 20px; 
+        height: 20px;
+        margin-right: 0.5rem;
+    }
         }
-
-        /* Small devices (landscape phones, 576px and up) */
-        @media (min-width: 576px) and (max-width: 767.98px) {
-            .about-me-img-block {
-                flex-direction: column;
-            }
-            .about-me img {
-                width: 12rem;
-                height: 12rem;
-            }
-            .description-text {
-                text-align: center;
-            }
-            .description-text h3 {
-                margin-left: 0;
-            }
-            .position-relative {
-                justify-content: center;
-            }
-            .education-list .btn {
-                display: inline-block;
-                width: auto;
-                margin-left: initial;
-                margin-right: initial;
-            }
-            .education-list li aside {
-                align-items: flex-start;
-            }
-            .education-list li aside div {
-                text-align: left;
-            }
-        }
-
-
         /* Medium devices (tablets, 768px and up) */
         @media (min-width: 768px) {
             section {
@@ -691,7 +685,8 @@ footer p.quote {
             }
             .skill-list li {
                 display: block;
-                text-align: left;
+                text-align: center;
+                margin-left:10px;
             }
 
             #projects h3 {
@@ -719,5 +714,3 @@ footer p.quote {
                 text-align: left;
             }
 }
-
-
