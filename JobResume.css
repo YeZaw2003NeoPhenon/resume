@@ -1,8 +1,12 @@
+
+body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
 html{
     scroll-behavior: smooth;
 }
 .about-me {
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     padding: 4rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -111,6 +115,11 @@ html{
     color: #ffc107; 
     background-color: rgba(255, 193, 7, 0.2); 
 }
+.nav-link.active {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+    transition: all 0.3s ease;
+}
 
 
 .navbar-nav .nav-item {
@@ -166,6 +175,7 @@ h3 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .card-img-top {
     border-radius: 10px 10px 0 0; 
     height: 200px; 
@@ -215,6 +225,11 @@ h3 {
     background-color: #0056b3; 
 }
 
+.contact-link .icon:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
 .position-relative img {
     width: 100%;
     height: 150px;
@@ -237,13 +252,14 @@ h3 {
     display: flex; 
     align-items: center;
     font-size: 1.15rem; 
+    gap:10px;
     color: #333333; 
 }
 
 .skill-list li:hover {
     background-color: #e6f2ff; 
-    transform: translateY(-3px); 
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .skill-list li i {
@@ -478,11 +494,10 @@ footer p.quote {
 }
 
 #backend-projects p:hover {
-    background-color: #f1f3f5;
-    border-radius: 4px;
+    background-color: #e9ecef;
     transition: background-color 0.3s ease;
-    padding-left: 10px;
 }
+
 #backend-projects .row{
     padding:15px;
 }
