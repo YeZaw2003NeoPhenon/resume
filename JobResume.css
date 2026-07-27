@@ -118,7 +118,7 @@ p, ul {
     font-weight: bold;
 }
 
-
+/* Navbar */
 .navbar {
     background-color: #16213e;
     padding: 1rem;
@@ -196,6 +196,7 @@ h3 {
     font-size: 27px;
 }
 
+/* Skills */
 .skills h2::after {
     content: "";
     display: block;
@@ -366,6 +367,7 @@ h3 {
     color: #495057;
 }
 
+/* Education */
 .education {
     padding: 4rem 0;
     background-color: #f8f9fa;
@@ -442,7 +444,7 @@ h3 {
     color: #0056b3;
 }
 
-
+/* Footer */
 footer {
     background-color: #16213e;
     color: white;
@@ -510,6 +512,9 @@ footer p.quote {
     gap: 10px;
 }
 
+/* Responsive */
+
+/* Large Desktop (1200px and up) - 3 columns */
 @media (min-width: 1200px) {
     section {
         padding: 3rem;
@@ -568,6 +573,7 @@ footer p.quote {
     }
 }
 
+/* Tablet & Medium Desktop (768px to 1199px) - 2 columns */
 @media (min-width: 768px) and (max-width: 1199px) {
     section {
         padding: 3rem;
@@ -626,6 +632,7 @@ footer p.quote {
     }
 }
 
+/* Small Tablet (576px to 767px) - 1 column */
 @media (min-width: 576px) and (max-width: 767px) {
     section {
         padding: 2rem;
@@ -728,6 +735,7 @@ footer p.quote {
     }
 }
 
+/* Mobile (up to 575px) - 1 column */
 @media (max-width: 575px) {
     section {
         padding: 1.5rem;
@@ -842,6 +850,7 @@ footer p.quote {
     }
 }
 
+/* Print stylesheet */
 @media print {
     .nav-container,
     .hero-cta,
